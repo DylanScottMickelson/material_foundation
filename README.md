@@ -16,7 +16,7 @@ dependencies:
   material_foundation: ^1.0.0
 ```
 
-Run flutter pub get to fetch the package and its dependencies.
+Run ```console flutter pub get``` to fetch the package and its dependencies.
 
 ## Usage
 
