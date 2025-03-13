@@ -17,7 +17,7 @@ Add ```material_foundation``` as a dependency in your ```pubspec.yaml``` file:
 dependencies:
   flutter:
     sdk: flutter
-    
+
   material_foundation:
     path: packages/material_foundation/
 ```
@@ -43,14 +43,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Material Foundation',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
-        body: AdaptiveScaffold(
+      home:  AdaptiveScaffold(
           backgroundColor: Colors.white,
           desktopBody: DesktopBody(),
           tabletBody: TabletBody(),
           mobileBody: MobileBody(),
         ),
-      ),
     );
   }
 }
