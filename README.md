@@ -5,6 +5,25 @@ A foundation for adaptive flutter material apps.
 This plugin supports adaptive screen scaffolding; allowing you to change which widget is shown on a screen, based off
 the screen size (Desktop, Tablet, or Mobile).
 
+## Get Started
+
+Create a folder named ```packages``` in your flutter project.
+
+Paste ```material_foundation``` package in the ```packages``` folder.
+
+Add ```material_foundation``` as a dependency in your ```pubspec.yaml``` file:
+
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  material_foundation:
+    path: packages/material_foundation/
+```
+
+Run ```flutter pub get``` to fetch the package and its dependencies.
+
 ## Usage
 
 Import the Material Foundation library files into your Dart file:
