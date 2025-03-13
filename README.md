@@ -7,10 +7,11 @@ the screen size (Desktop, Tablet, or Mobile).
 
 ## Usage
 
-Import the Material Foundation library into your Dart file:
+Import the Material Foundation library files into your Dart file:
 
 ```dart
 import 'package:material_foundation/adaptive_scaffold.dart';
+import 'package:material_foundation/adaptive_layout_builder.dart';
 ```
 
 
