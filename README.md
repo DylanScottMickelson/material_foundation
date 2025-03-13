@@ -7,7 +7,7 @@ the screen size (Desktop, Tablet, or Mobile).
 
 ## Getting started
 
-To use this plugin, add material_foundation as a dependency in your pubspec.yaml file.
+To use this plugin, add ```material_foundation``` as a dependency in your ```pubspec.yaml``` file.
 
 ```dart
 dependencies:
@@ -16,7 +16,7 @@ dependencies:
   material_foundation: ^1.0.0
 ```
 
-Run ```console flutter pub get``` to fetch the package and its dependencies.
+Run ```flutter pub get``` to fetch the package and its dependencies.
 
 ## Usage
 
