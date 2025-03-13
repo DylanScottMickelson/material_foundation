@@ -1,4 +1,4 @@
-Material Foundation
+# Material Foundation
 
 A foundation for adaptive material apps.
 
