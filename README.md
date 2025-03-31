@@ -1,11 +1,11 @@
-# Material Foundation
+# 🏗️ Material Foundation
 
 A foundation for adaptive flutter material apps.
 
 This plugin supports adaptive screen scaffolding; allowing you to change which widget is shown on a screen, based off
 the screen size (Desktop, Tablet, or Mobile).
 
-## Get Started
+## ✨ Get Started
 
 Create a folder named ```packages``` in your flutter project.
 
@@ -79,8 +79,8 @@ class MobileBody extends StatelessWidget {
 }
 ```
 
-## Contributing
+## 👐 Contributing
 We welcome contributions from the community! If you'd like to contribute, please check out our contribution guidelines and submit a pull request with your changes.
 
-## License
+## 📃 License
 Material Foundation is released under the BSD-3 License. See LICENSE for details.
