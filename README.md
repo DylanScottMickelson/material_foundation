@@ -2,10 +2,9 @@
 
 A foundation for adaptive flutter material apps.
 
-This plugin supports adaptive screen scaffolding; allowing you to change which widget is shown on a screen, based off
-the screen size (Desktop, Tablet, or Mobile).
+This plugin offers adaptive screen scaffolding, allowing you to switch the visible widget according to the screen size (Desktop, Tablet, or Mobile).
 
-## ✨ Get Started
+## 📂 Get Started
 
 Create a folder named ```packages``` in your flutter project.
 
@@ -24,7 +23,7 @@ dependencies:
 
 Run ```flutter pub get``` to fetch the package and its dependencies.
 
-## Usage
+## ✨ Usage
 
 Import the Material Foundation library files into your Dart file:
 
@@ -79,7 +78,7 @@ class MobileBody extends StatelessWidget {
 }
 ```
 
-## 👐 Contributing
+## 🤗 Contributing
 We welcome contributions from the community! If you'd like to contribute, please check out our contribution guidelines and submit a pull request with your changes.
 
 ## 📃 License
