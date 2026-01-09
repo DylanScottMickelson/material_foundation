@@ -1,8 +1,8 @@
 # 🏗️ Material Foundation
 
-A foundation for adaptive flutter material apps.
+A foundation for dynamic flutter material apps.
 
-This plugin offers adaptive screen scaffolding, allowing you to switch the visible widget according to the screen size (Desktop, Tablet, or Mobile).
+This plugin offers dynamic screen scaffolding, allowing you to switch the visible widget according to the screen size (Desktop, Tablet, or Mobile).
 
 ## 📂 Get Started
 
