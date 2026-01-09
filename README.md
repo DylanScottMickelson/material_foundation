@@ -28,8 +28,8 @@ Run ```flutter pub get``` to fetch the package and its dependencies.
 Import the Material Foundation library files into your Dart file:
 
 ```dart
-import 'package:material_foundation/adaptive_scaffold.dart';
-import 'package:material_foundation/adaptive_layout_builder.dart';
+import 'package:material_foundation/dynamic_scaffold.dart';
+import 'package:material_foundation/dynamic_layout_builder.dart';
 ```
 
 
