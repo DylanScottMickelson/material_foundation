@@ -1,7 +1,5 @@
-library material_foundation;
-
 import 'package:flutter/material.dart';
-import 'package:material_foundation/adaptive_scaffold.dart';
+import 'package:material_foundation/dynamic_scaffold.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material Foundation Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: '🏗️ Material Foundation',
       debugShowCheckedModeBanner: false,
       home: const Home(),
     );
@@ -26,27 +20,24 @@ class MyApp extends StatelessWidget {
 
 class Home extends StatelessWidget {
   const Home({super.key});
+
   //Card Example : Widget Build Method
   Widget _card(Color color) {
     return Padding(
-      padding: const EdgeInsets.all(13.369),
-      child: Card(
-        color: color,
-        child: const SizedBox(
-          height: 69,
-        ),
-      ),
+      padding: const EdgeInsets.all(13),
+      child: Card(color: color, child: const SizedBox(height: 69)),
     );
   }
+
   //Cards List : Widget List
   List<Widget> _cards(String type) {
     return [
-      Center(
-        child: Text(
-          type,
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 33,
+      Padding(
+        padding: const EdgeInsets.all(13),
+        child: Center(
+          child: Text(
+            type,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 33),
           ),
         ),
       ),
@@ -55,29 +46,25 @@ class Home extends StatelessWidget {
       _card(Colors.green),
     ];
   }
+
   //Mobile Body : Widget Build Method
   Widget _mobile() {
-    return ListView(
-      children: _cards("Mobile"),
-    );
+    return ListView(children: _cards("Mobile"));
   }
+
   //Tablet Body : Widget Build Method
   Widget _tablet() {
-    return GridView.count(
-      crossAxisCount: 2,
-      children: _cards("Tablet"),
-    );
+    return GridView.count(crossAxisCount: 2, children: _cards("Tablet"));
   }
+
   //Desktop Body : Widget Build Method
   Widget _desktop() {
-    return GridView.count(
-      crossAxisCount: 3,
-      children: _cards("Desktop"),
-    );
+    return GridView.count(crossAxisCount: 3, children: _cards("Desktop"));
   }
+
   //Adpative Screen : Widget Build Method
   Widget _screen() {
-    return AdaptiveScaffold(
+    return DynamicScaffold(
       backgroundColor: Colors.blueAccent,
       mobileBody: _mobile(),
       tabletBody: _tablet(),

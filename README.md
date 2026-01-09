@@ -33,7 +33,7 @@ import 'package:material_foundation/adaptive_layout_builder.dart';
 ```
 
 
-Create a new AdaptiveScaffold widget with the desired layouts for desktop, tablet, and mobile devices:
+Create a new DynamicScaffold widget with the desired layouts for desktop, tablet, and mobile devices:
 
 ```dart
 class _MyAppState extends State<MyApp> {
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Material Foundation',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home:  AdaptiveScaffold(
+      home:  DynamicScaffold(
           backgroundColor: Colors.white,
           desktopBody: DesktopBody(),
           tabletBody: TabletBody(),
@@ -77,6 +77,7 @@ class MobileBody extends StatelessWidget {
   }
 }
 ```
+
 
 ## 🤗 Contributing
 We welcome contributions from the community! If you'd like to contribute, please check out our contribution guidelines and submit a pull request with your changes.
