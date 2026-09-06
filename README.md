@@ -6,10 +6,6 @@ This plugin offers dynamic screen scaffolding, allowing you to switch the visibl
 
 ## 📂 Get Started
 
-Create a folder named ```packages``` in your flutter project.
-
-Paste ```material_foundation``` package in the ```packages``` folder.
-
 Add ```material_foundation``` as a dependency in your ```pubspec.yaml``` file:
 
 ```dart
@@ -18,7 +14,8 @@ dependencies:
     sdk: flutter
 
   material_foundation:
-    path: packages/material_foundation/
+    git:
+      url: https://github.com/DylanScottMickelson/material_foundation.git
 ```
 
 Run ```flutter pub get``` to fetch the package and its dependencies.
