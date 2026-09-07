@@ -9,7 +9,9 @@ import 'dynamic_layout_builder.dart';
 ///
 /// Creator: Dylan Scott Mickelson
 /// Date: 01/13/2019
-/// Edited: 01/09/2026
+/// Edited:
+/// 01/09/2026 DSM
+/// 09/07/2026 DSM
 
 class DynamicScaffold extends StatelessWidget {
   final Widget desktopBody;
@@ -19,6 +21,9 @@ class DynamicScaffold extends StatelessWidget {
   final Widget? drawer;
   final Widget? endDrawer;
   final bool? resizeToAvoidInset;
+  final double? width;
+  final double? maxDesktopWidth;
+  final double? maxTabletWidth;
 
   const DynamicScaffold({
     super.key,
@@ -29,11 +34,21 @@ class DynamicScaffold extends StatelessWidget {
     this.drawer,
     this.endDrawer,
     this.resizeToAvoidInset,
+    this.width,
+    this.maxTabletWidth,
+    this.maxDesktopWidth,
   });
 
   ///Dyanmic Screen Body : Widget Build Method
   Widget _buildDynamicScaffoldBody() {
-    return DynamicLayoutBuilder(mobileBody, tabletBody, desktopBody);
+    return DynamicLayoutBuilder(
+      mobileBody,
+      tabletBody,
+      desktopBody,
+      width: width,
+      maxTabletWidth: maxTabletWidth,
+      maxDesktopWidth: maxDesktopWidth,
+    );
   }
 
   @override
