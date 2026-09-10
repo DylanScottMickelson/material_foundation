@@ -5,7 +5,7 @@ Material Foundation is an open-source project that creates an adaptable material
 improve and expand our project. In this document, we outline the guidelines for contributing to the Material Foundation package.
 
 ## 🐛 Reporting Bugs:
-Bug reports help us identify and fix issues in FreeOS. To report a bug, please follow these steps:
+Bug reports help us identify and fix issues. To report a bug, please follow these steps:
 - Search the issue tracker to see if someone else has already reported the issue.
 - If not, create a new issue with a clear title and description outlining your problem.
 - Include any relevant information, such as error messages, logs, or screenshots.
