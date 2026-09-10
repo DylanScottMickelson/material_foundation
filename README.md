@@ -22,12 +22,6 @@
   </a>
 </p>
 
-# 🏗️ Material Foundation
-
-A foundation for dynamic flutter material apps.
-
-This plugin offers dynamic screen scaffolding, allowing you to switch the visible widget according to the screen size (Desktop, Tablet, or Mobile).
-
 ## 📂 Get Started
 
 Add ```material_foundation``` as a dependency in your ```pubspec.yaml``` file:
