@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DylanScottMickelson/material_foundation/actions/workflows/ci.yml">
+  <a href="https://github.com/DylanScottMickelson/material_foundation/actions/workflows/ci.yaml">
   <img
-    src="https://github.com/DylanScottMickelson/material_foundation/actions/workflows/ci.yml/badge.svg?branch=main"
+    src="https://github.com/DylanScottMickelson/material_foundation/actions/workflows/ci.yaml/badge.svg?branch=main"
     alt="Flutter CI"
   >
 </a>
