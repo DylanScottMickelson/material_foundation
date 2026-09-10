@@ -1,8 +1,26 @@
-# 🏗️ Material Foundation
+<p align="center">
+  <img
+    src="assets/material-foundation-banner.png"
+    alt="Material Foundation — responsive Flutter layouts for mobile, tablet, and desktop"
+    width="100%"
+  />
+</p>
 
-A foundation for dynamic flutter material apps.
+<p align="center">
+  Build responsive Flutter interfaces that automatically adapt across mobile, tablet, and desktop layouts.
+</p>
 
-This plugin offers dynamic screen scaffolding, allowing you to switch the visible widget according to the screen size (Desktop, Tablet, or Mobile).
+<p align="center">
+  <a href="https://github.com/DylanScottMickelson/material_foundation">
+    <img src="https://img.shields.io/badge/Flutter-Package-02569B?logo=flutter&logoColor=white" alt="Flutter package">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" alt="BSD-3-Clause license">
+  </a>
+  <a href="https://github.com/sponsors/DylanScottMickelson">
+    <img src="https://img.shields.io/badge/Sponsor-Project-EA4AAA?logo=githubsponsors&logoColor=white" alt="Sponsor this project">
+  </a>
+</p>
 
 ## 📂 Get Started
 
