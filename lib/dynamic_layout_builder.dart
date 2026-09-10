@@ -33,7 +33,7 @@ class DynamicLayoutBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if ((width ?? constraints.maxWidth) >= (1200)) {
+        if ((width ?? constraints.maxWidth) >= (maxDesktopWidth ?? 1200)) {
           return desktopWidget;
         } else if ((width ?? constraints.maxWidth) >= (maxTabletWidth ?? 740) &&
             (width ?? constraints.maxWidth) < (maxDesktopWidth ?? 1200)) {
