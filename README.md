@@ -11,6 +11,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/DylanScottMickelson/material_foundation/actions/workflows/ci.yml">
+  <img
+    src="https://github.com/DylanScottMickelson/material_foundation/actions/workflows/ci.yml/badge.svg?branch=main"
+    alt="Flutter CI"
+  >
+</a>
   <a href="https://github.com/DylanScottMickelson/material_foundation">
     <img src="https://img.shields.io/badge/Flutter-Package-02569B?logo=flutter&logoColor=white" alt="Flutter package">
   </a>
