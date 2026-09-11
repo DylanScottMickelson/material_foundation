@@ -28,6 +28,16 @@
   </a>
 </p>
 
+## 🪟 Example Preview
+
+<p align="center">
+  <img
+    src="assets/material-foundation-example.gif"
+    alt="Material Foundation — responsive Flutter layouts for mobile, tablet, and desktop"
+    width="100%"
+  />
+</p>
+
 ## 📂 Get Started
 
 Add ```material_foundation``` as a dependency in your ```pubspec.yaml``` file:
