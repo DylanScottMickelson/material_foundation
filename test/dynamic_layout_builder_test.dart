@@ -8,6 +8,7 @@ const _desktopKey = ValueKey<String>('desktop');
 
 Widget _layoutBuilder({
   double? width,
+  double? maxMobileWidth,
   double? maxTabletWidth,
   double? minDesktopWidth,
 }) {
@@ -17,6 +18,7 @@ Widget _layoutBuilder({
       const SizedBox(key: _tabletKey),
       const SizedBox(key: _desktopKey),
       width: width,
+      maxMobileWidth: maxMobileWidth,
       maxTabletWidth: maxTabletWidth,
       minDesktopWidth: minDesktopWidth,
     ),
@@ -57,7 +59,8 @@ void main() {
         await tester.pumpWidget(
           _layoutBuilder(
             width: width,
-            maxTabletWidth: 600,
+            maxMobileWidth: 600,
+            maxTabletWidth: 800,
             minDesktopWidth: 1000,
           ),
         );
