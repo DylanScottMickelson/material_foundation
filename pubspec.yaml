@@ -1,6 +1,6 @@
 name: material_foundation
-description: "Easy dynamic widgets and screens for flutter."
-version: 0.2.0
+description: "A foundation for adaptive flutter apps."
+version: 0.3.0
 homepage:
 
 environment:

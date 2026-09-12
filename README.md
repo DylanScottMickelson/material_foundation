@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Build responsive Flutter interfaces that automatically adapt across mobile, tablet, and desktop layouts.
+  Build adaptive Flutter interfaces across mobile, tablet, and desktop layouts.
 </p>
 
 <p align="center">

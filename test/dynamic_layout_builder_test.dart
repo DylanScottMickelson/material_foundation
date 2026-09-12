@@ -9,7 +9,7 @@ const _desktopKey = ValueKey<String>('desktop');
 Widget _layoutBuilder({
   double? width,
   double? maxTabletWidth,
-  double? maxDesktopWidth,
+  double? minDesktopWidth,
 }) {
   return MaterialApp(
     home: DynamicLayoutBuilder(
@@ -18,7 +18,7 @@ Widget _layoutBuilder({
       const SizedBox(key: _desktopKey),
       width: width,
       maxTabletWidth: maxTabletWidth,
-      maxDesktopWidth: maxDesktopWidth,
+      minDesktopWidth: minDesktopWidth,
     ),
   );
 }
@@ -58,7 +58,7 @@ void main() {
           _layoutBuilder(
             width: width,
             maxTabletWidth: 600,
-            maxDesktopWidth: 1000,
+            minDesktopWidth: 1000,
           ),
         );
         _expectOnly(expectedKey);

@@ -10,22 +10,25 @@ import 'package:flutter/material.dart';
 /// Edited:
 /// 01/09/2026 DSM
 /// 09/07/2026 DSM
+/// 09/12/2026 DSM
 
 class DynamicLayoutBuilder extends StatelessWidget {
   final Widget mobileWidget;
   final Widget tabletWidget;
   final Widget desktopWidget;
   final double? width;
-  final double? maxDesktopWidth;
+  final double? maxMobileWidth;
   final double? maxTabletWidth;
+  final double? minDesktopWidth;
 
   const DynamicLayoutBuilder(
     this.mobileWidget,
     this.tabletWidget,
     this.desktopWidget, {
     this.width,
+    this.maxMobileWidth,
     this.maxTabletWidth,
-    this.maxDesktopWidth,
+    this.minDesktopWidth,
     super.key,
   });
 
@@ -33,10 +36,10 @@ class DynamicLayoutBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if ((width ?? constraints.maxWidth) >= (maxDesktopWidth ?? 1200)) {
+        if ((width ?? constraints.maxWidth) >= (minDesktopWidth ?? 1200)) {
           return desktopWidget;
-        } else if ((width ?? constraints.maxWidth) >= (maxTabletWidth ?? 740) &&
-            (width ?? constraints.maxWidth) < (maxDesktopWidth ?? 1200)) {
+        } else if ((width ?? constraints.maxWidth) >= (maxMobileWidth ?? 740) &&
+            (width ?? constraints.maxWidth) < (maxTabletWidth ?? 1200)) {
           return tabletWidget;
         } else {
           return mobileWidget;
