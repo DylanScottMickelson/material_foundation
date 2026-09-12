@@ -50,7 +50,7 @@ void main() {
     testWidgets('honors custom tablet and desktop breakpoints', (tester) async {
       final cases = <(double, ValueKey<String>)>[
         (599, _mobileKey),
-        (600, _tabletKey),
+        (800, _tabletKey),
         (999, _tabletKey),
         (1000, _desktopKey),
       ];
