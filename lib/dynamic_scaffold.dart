@@ -21,6 +21,10 @@ class DynamicScaffold extends StatelessWidget {
   final Color backgroundColor;
   final Widget? drawer;
   final Widget? endDrawer;
+  final Widget? floatingActionButton;
+  final PreferredSizeWidget? appBar;
+  final Widget? bottomNavBar;
+  final Widget? bottomSheet;
   final bool? resizeToAvoidInset;
   final double? width;
   final double? maxMobileWidth;
@@ -35,6 +39,10 @@ class DynamicScaffold extends StatelessWidget {
     required this.backgroundColor,
     this.drawer,
     this.endDrawer,
+    this.floatingActionButton,
+    this.appBar,
+    this.bottomNavBar,
+    this.bottomSheet,
     this.resizeToAvoidInset,
     this.width,
     this.maxMobileWidth,
@@ -59,11 +67,15 @@ class DynamicScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: appBar,
         resizeToAvoidBottomInset: resizeToAvoidInset ?? false,
         backgroundColor: backgroundColor,
         drawer: drawer,
         endDrawer: endDrawer,
         body: _buildDynamicScaffoldBody(),
+        floatingActionButton: floatingActionButton,
+        bottomNavigationBar: bottomNavBar,
+        bottomSheet: bottomSheet,
       ),
     );
   }
